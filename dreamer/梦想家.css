@@ -1,0 +1,362 @@
+body{
+	background: gray; 
+}
+.bigdiv{
+	width: 750px;
+	height: 1334px;
+	background-image: url(image/bg.png);
+	background-size: 750px 1196px;
+	background-position: bottom;
+	margin: 100px auto;
+	position: relative;
+	overflow: hidden;
+}
+#ee{
+	width: 750px;
+	height: 1197px;
+	position: relative;
+	top: 139px;
+}
+.liu1{
+	position: absolute;
+	top: -60px;
+	left: 20px;
+}
+.liu2{
+	position: absolute;
+	top: -60px;
+	left: 200px;
+}
+.liu3{
+	position: absolute;
+	top: 150px;
+	left: -250px;
+}
+.top{
+	width: 750px;
+	height: 129px;
+	position: absolute;
+	top: 0px;
+	background-color: black;
+	border-bottom: 10px solid red;
+	z-index: 10;
+}
+.meng{
+	width: 750px;
+	height: 1196px;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,0.3);
+}
+.red{
+	position: absolute;
+	top: 106px;
+	left: 67px;
+}
+.blue{
+	position: absolute;
+	top: 106px;
+	right: 66px;
+}
+.yellow{
+	position: absolute;
+	bottom: 463px;
+	left: 67px;
+}
+.gray1{
+	position: absolute;
+	top: 246px;
+	left: 205px;
+}
+.blue2{
+	position: absolute;
+	top: 481px;
+	left: 234px;
+}
+.green{
+	position: absolute;
+	top: 106px;
+	left: 306px;
+}
+.gray2{
+	position: absolute;
+	top: 106px;
+	left: 395px;
+}
+.d{
+	position: absolute;
+	top: 329px;
+	left: 67px;
+}
+.d2{
+	position: absolute;
+	top: 357px;
+	left: 95px;
+}
+.r{
+	position: absolute;
+	top: 320px;
+	left: 205px;
+}
+.e{
+	position: absolute;
+	top: 334px;
+	left: 305px;
+}
+.d3{
+	position: absolute;
+	top: 362px;
+	left: 233px;
+}
+.m,.a,.k,.e2,.r2{
+	position: absolute;
+	bottom: 463px;	
+}
+.m{
+	left: 233px;
+}
+.a{
+	left: 347px;
+}
+.k{
+	left: 455px;
+}
+.e2{
+	right: 156px;
+}
+.r2{
+	right: 66px;
+}
+.font{
+	width: 618px;
+	height: 67px;
+	position: absolute;
+	bottom: 274px;
+	left: 67px;
+	text-align: center;
+	line-height: 67px;
+	font-size: 42px;
+	color: #898989;
+}
+.font2{
+	width: 618px;
+	height: 118px;
+	position: absolute;
+	bottom: 156px;
+	left: 67px;
+	text-align: center;
+	line-height: 118px;
+	font-size: 84px;
+	color: #cf121b;
+}
+.s1{
+	color: #0048e7;
+}
+.s2{
+	color: #fccf00;
+}
+.s3{
+	color: #ffffff;
+}
+.jian{
+	position: absolute;
+	bottom: 42px;
+	left: 354px;
+}
+.music{
+	position: absolute;
+	bottom: 40px;
+	right: 55px;
+}
+.point{
+	width: 12px;
+	height: 12px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	position: absolute;
+	top: 64px; 
+}
+.po1{
+	right: 105px;
+}
+.po2{
+	right: 75px;
+}
+.po3{
+	right: 43px;
+}
+.meng2{
+	width: 750px;
+	height: 1196px;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,0.8);
+	display: none;
+}
+@keyframes run{
+	from{	transform: scale(0.2,0.2);}
+	to{transform: scale(1,1);}
+}
+.font,.font2{
+	animation: run 3s linear;
+}
+@keyframes run2{
+	from{transform: rotateZ(0deg);}
+	to{transform: rotateZ(360deg);}
+}
+.music{
+	animation: run2 2s linear infinite;
+	transform-origin: 25px 25px; 
+}
+@keyframes jump{
+	0%{transform: translateY(0px);}
+	25%{transform: translateY(-7px);}
+	50%{transform: translateY(0px);}
+	75%{transform: translateY(7px);}
+	100%{transform: translateY(0px);}
+}
+.jian{
+	animation: jump 1s linear infinite;
+}
+@keyframes left{
+	from{left: -250px;}
+	to{left: 67px;}
+}
+.red{
+	animation: left 2s linear;
+}
+@keyframes right{
+	from{right: -550px;}
+	to{right: 66px;}
+}
+.blue{
+	animation: right 2s linear;
+}
+@keyframes bottom{
+	from{bottom:-250px;}
+	to{bottom:463px;}
+}
+.yellow{
+	animation: bottom 2s linear;
+}
+@keyframes top1{
+	from{top:-111px;transform: rotateZ(0deg);}
+	to{top:106px;transform: rotateZ(360deg);}
+}
+.green{
+	animation: top1 2s linear;
+}
+@keyframes top2{
+	from{top:-311px;}
+	to{top:106px;}
+}
+.gray2{
+	animation: top2 2s linear;
+}
+@keyframes run3{
+	from{transform: scale(2,2);}
+	to{transform: scale(1,1);}
+}
+.r{
+	animation: run3 2s linear;
+}
+@keyframes jump2{
+	from{transform: scale(2,2);}
+	30%{transform: scale(1,1);}
+	50%{transform: scale(1.5,1.5);}
+	70%{transform: scale(1.2,1.2);}
+	85%{transform: scale(1.3,1.3);}
+	100%{transform: scale(1,1);}
+}
+.e{
+	animation: jump2 2s linear;
+	animation-delay: 1s;
+}
+@keyframes scale{
+	from{transform: rotateZ(0deg); left: -250px;}
+	to{transform: rotateZ(360deg); left: 95px;}
+}
+.d2{
+	animation: scale 2s linear;
+}
+.d3{
+	animation: run3 2s linear 1s;
+}
+@keyframes translate{
+	from{top: -161px;}
+	to{top: 481px;}
+}
+.blue2{
+	animation: translate 2s linear 1s;
+}
+@keyframes zi{
+	from{transform: scale(1,1);}
+	50%{transform: scale(1.5,1.5);}
+	to{transform: scale(1,1);}
+}
+.m{
+	animation: zi 1s linear 2s;
+}
+.a{
+	animation: zi 1s linear 2.2s;
+}
+.k{
+	animation: zi 1s linear 2.4s;
+}
+.e2{
+	animation: zi 1s linear 2.6s;
+}
+.r2{
+	animation: zi 1s linear 2.8s;
+}
+@keyframes gray1{
+	from{transform: scale(2,2) rotateZ(0deg);}
+	to{transform: scale(1,1) rotateZ(360deg);}
+}
+.gray1{
+	animation: gray1 2s linear;
+}
+.d{
+	animation: run2 2s linear;
+}
+@keyframes liu2{
+	from{transform: rotateZ(220deg);left: 200px;top: -60px;}
+	to{transform: rotateZ(220deg);left: 750px;top: 900px; }
+}
+.liu2{
+	animation: liu2 2s linear infinite;
+}
+@keyframes liu1{
+	from{transform: rotateZ(40deg);left: 20px;top: -50px; }
+	to{transform: rotateZ(40deg);left: 500px;top: 1000px;}
+}
+@keyframes liu3{
+	from{transform: rotateZ(40deg);left: -250px;top: 150px; }
+	to{transform: rotateZ(40deg);left: 500px;top: 1330px;}
+}
+.liu1{
+	animation: liu1 2s linear infinite 1s;
+}
+.liu3{
+	animation: liu3 1s linear infinite 2s;
+}
+
+@keyframes jian1{
+	from{}
+	to{transform: translateY(-1350px);}
+}
+@keyframes jian2{
+	from{transform: translateY(-1350px);}
+	to{}
+}
+
+
+
+
+
+
+
+
+
+
+

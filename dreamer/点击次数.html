@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" " http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=" http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/javascript; charset=gb2312" /></head>
+<body>
+<input type="button" value="点击" onclick="checkRight()" />
+已点次数：
+<span id="dianjicishu"></span>
+</body>
+<script defer="defer">
+    var x=0;
+    function checkRight(){
+         x=x+1;
+         document.getElementById('dianjicishu').innerHTML = x;
+    }
+</script>
+</html>

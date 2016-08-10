@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" >
+		<title>梦想家</title>
+		<link rel="stylesheet" type="text/css" href="梦想家.css">
+		<script type="text/javascript">
+			 var x=1;
+			 var a=1;
+			function stop(){				
+				if(x%2==1)
+					{document.getElementById('au').pause();
+					document.getElementById('im').src='image/musicoff.png';
+					document.getElementById('mu').style.animation='paused'; 
+					x=x+1;
+					}
+				else{document.getElementById('au').play();
+					document.getElementById('im').src='image/music3.png';
+					document.getElementById('mu').style.animation='run2 2s linear infinite';
+					x=x+1;}					 
+			}
+			function over(){
+				if(a%2==1){
+				document.getElementById('ee').style.animation='jian1 2s linear forwards';a=a+1;}
+				else{document.getElementById('ee').style.animation='jian2 2s linear forwards';a=a+1;}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="bigdiv">
+			
+			<div class="top">
+				<div class="point po1"></div>
+				<div class="point po2"></div>
+				<div class="point po3"></div>
+			</div>
+			<div class="liu1"><img src="image/流星1.png" alt=""></div>
+			<div class="liu2"><img src="image/流星2.png" alt=""></div>
+			<div class="liu3"><img src="image/流星1.png" alt=""></div>
+			<div id="ee">
+			<div class="meng"></div>
+			<div class="red" id="red"><img src="image/红.png" alt=""></div>
+			<div class="blue"><img src="image/蓝1.png" alt=""></div>
+			<div class="yellow"><img src="image/黄.png" alt=""></div>
+			<div class="gray1"><img src="image/左灰色.png" alt=""></div>
+			<div class="blue2"><img src="image/蓝二.png" alt=""></div>
+			<div class="green"><img src="image/绿1.png" alt=""></div>
+			<div class="gray2"><img src="image/灰1.png" alt=""></div>
+			<div class="d"><img src="image/D.png" alt=""></div>
+			<div class="d2"><img src="image/白D.png" alt=""></div>
+			<div class="r"><img src="image/R.png" alt=""></div>
+			<div class="e"><img src="image/E.png" alt=""></div>
+			<div class="d3"><img src="image/红D.png" alt=""></div>
+			<div class="m"><img src="image/M.png" alt=""></div>
+			<div class="a"><img src="image/A.png" alt=""></div>
+			<div class="k"><img src="image/K.png" alt=""></div>
+			<div class="e2"><img src="image/E2.png" alt=""></div>
+			<div class="r2"><img src="image/R2.png" alt=""></div>
+			<div class="font">2015创想家盛典</div>
+			<div class="font2"><span class="s1">男人</span><span class="s2">有梦</span><span class="s3">就去</span>造</div>
+			</div>
+			<div class="jian"><img src="image/箭头.png" alt="" onclick="over()"></div>
+			<a href="#red" onclick="stop()"><div class="music" id="mu"><img src="image/music3.png" alt="" id="im"></div></a>
+			<audio src="music/Shiftone_1.18.mp3" id="au" autoplay="autoplay"></audio>
+		</div>
+				
+	</body>
+</html>
