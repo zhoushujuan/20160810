@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS-初识</title>
+		<style>
+			body{
+			margin: 0px;
+			}
+			div{
+			width: 500px;
+			height: 300px;
+			background-color: red;
+			margin: 0 auto;
+			}
+			p{
+				margin: 0px;
+				width: 200px;
+				height: 200px;
+				background: blue;
+				color: white;
+				font-size: 20px;
+				text-align: center;
+				line-height: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+		<p class="p1">1</p>
+		<p class="p1">2</p>
+		<p>3</p>
+		<form action="">
+			<input type="text" name="haha">
+		</form>
+		<script>
+		// 弹窗
+			// alert('JS');
+			// 获取ID名
+			document.getElementById('div1').onclick=
+			function(){
+				document.getElementById('div1').style.backgroundColor='#000000';
+			};
+
+			// 通过标签名获取标签集合（elements） p[n]
+			/*document.getElementsByTagName("p")[1].onmouseout=
+			function(){alert('我是通过标签名获取的')};*/
+
+			// 获取className
+			/*document.getElementsByClassName('p1')[0].onclick=
+			function(){alert('我是通过类名获取的')}*/
+
+			// onmouseover 鼠标移入
+			// onmouseout  鼠标移出
+
+
+		</script>
+	</body>
+</html>
+
+
